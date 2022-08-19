@@ -100,7 +100,7 @@ p{
 	text-align: left;
 }
 
-@media all and (max-width: 991)  {
+@media  (max-width: 991)  {
 	.box1{
 		width: 50%;
 	}
