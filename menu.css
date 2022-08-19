@@ -16,29 +16,33 @@ body{
 	height: auto;
 }
 .box p{
-	margin-top: 3rem; 
+	margin-top: 2rem; 
 }
 
 .box{
+	padding: 0.4rem;
 	float: left;
 	background-color: #dbdbdb;
 	margin: 20px;
 	position: relative;
 	box-sizing: border-box;
 	font-size: 15px;
-	border: 3px solid black;
+	border: 1px solid black;
 	font-family: Helvetica, sans-serif;
 	
 }
 
 .smallbox {
 	width: 8rem;
-	border: 3px solid black;
+	border: 1px solid black;
+	border-top: none;
+	border-right: none;
 	position: absolute; 
 	top: 0;
 	right: 0;
 	text-align: center;
 	font-size: 25px;
+
 }
 
 .boxC {
@@ -63,15 +67,15 @@ p{
 /*Desktop*/
 @media screen and (min-width: 992px)  {
 	.box1{
-		width: 30%;
+		width: calc(100% / 3 - 40px);
 	}
 
 	.box2{
-		width: 30%;
+		width: calc(100% / 3 - 40px);
 	}
 
 	.box3{
-		width: 30%;
+		width: calc(100% / 3 - 40px);
 	}
 	
 }
@@ -79,20 +83,28 @@ p{
 /*Mobile Phone*/
 @media screen and (max-width: 767px) {
 	.box1{
-		width: 100%;
+		width:calc(100% - 40px);
 	}
 
 	.box2{
-		width: 100%;
+		width:calc(100% - 40px);
 	}
 
 	.box3{
-		width: 100%;
+		width:calc(100% - 40px);
 	}
 	
 }
 
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	
+	.box1 {
+		width: calc(50% - 40px);
+	}
+	.box2 {
+		width: calc(50% - 40px);
+	}
+	.box3 {
+		width: calc(100% - 40px);
+	}
 }
